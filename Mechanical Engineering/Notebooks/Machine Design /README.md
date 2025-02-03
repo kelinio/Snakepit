@@ -6,7 +6,7 @@ The velocity of any system in movement can always be decomposed into 3 dimension
 In this case we assume a 2 dimensional movement. The velocity is constant and we ignore the effects of air resistance.
 According to the x axis is
 
-![Alt text](../Images/projectile_main.jpg)
+![Projectile Trajectory](../Images/projectile_main.jpg)
 
 ## Failure Criteria
 
