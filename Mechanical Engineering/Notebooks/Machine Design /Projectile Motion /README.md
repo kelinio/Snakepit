@@ -1,14 +1,19 @@
-# Mechanics & Mechanical Design 
+# Projetile Motion
 
-## Projetile Motion
-This small program enables the user to draw the trajectory of a projectile given the initial velocity and the angle. 
-The velocity of any system in movement can always be decomposed into 3 dimensional components. this makes it easier to track the movement. 
-In this case we assume a 2 dimensional movement. The velocity is constant and we ignore the effects of air resistance.
-According to the x axis is
+## Description
+This Python notebook simulates projectile motion for two launch angles ($$\theta_1 = 45^\circ$$, $$\theta_2 = 30^\circ$$) with initial velocity $$u_0 = 40 \, \text{m/s}$$ under gravity $$g = 9.81 \, \text{m/s}^2$$. It calculates horizontal ($$s_x = u_x t$$) and vertical ($$s_y = u_y t - \frac{1}{2} g t^2$$) positions over time, plotting trajectories for each angle.
+
+## Practical Uses
+- Trajectory Analysis: Predict projectile paths for given launch angles and velocities.
+- Optimization: Determine optimal angles for maximum range or height in engineering designs (e.g., ballistics, sports equipment).
+- Education: Visualize the effect of launch angle on projectile motion for teaching purposes.
+
+## Key Equations
+- Horizontal velocity: $$u_x = u_0 \cos(\theta)$$  
+- Vertical velocity: $$u_y = u_0 \sin(\theta)$$  
+- Horizontal position: $$s_x = u_x t$$  
+- Vertical position: $$s_y = u_y t - \frac{1}{2} g t^2$$  
+- Total flight time: $$t_{total} = \frac{2 u_y}{g}$$  
 
 ![Projectile Trajectory](../Images/projectile_main.png)
 
-## Failure Criteria
-
-**The Cauchy-Schwarz Inequality**\
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
