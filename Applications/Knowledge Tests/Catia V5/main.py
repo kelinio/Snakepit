@@ -2,12 +2,30 @@ import tkinter as tk
 from tkinter import messagebox, scrolledtext
 import os
 import json
+import random
 
 def load_questions():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_dir, "data.json")
-    with open(file_path, 'r', encoding='utf-8') as file:
-        return json.load(file)
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            questions = json.load(file)
+    except FileNotFoundError:
+        messagebox.showerror("Error", f"Question file not found:\n{file_path}")
+        raise SystemExit(1)
+    except json.JSONDecodeError as e:
+        messagebox.showerror("Error", f"Invalid JSON in data file:\n{e}")
+        raise SystemExit(1)
+
+    # Validate question structure
+    required_keys = {"question", "options", "correct_answer", "type"}
+    for i, q in enumerate(questions):
+        missing = required_keys - set(q.keys())
+        if missing:
+            messagebox.showerror("Error", f"Question {i+1} is missing keys: {missing}")
+            raise SystemExit(1)
+
+    return questions
 
 class QuizApp:
     def __init__(self, root, questions):
@@ -16,6 +34,7 @@ class QuizApp:
         self.current_question = 0
         self.score = 0
         self.user_answers = []
+        random.shuffle(self.questions)
         self.setup_ui()
 
     def setup_ui(self):
@@ -66,33 +85,44 @@ class QuizApp:
 
     def check_answer(self):
         question_data = self.questions[self.current_question]
-        correct_answer = question_data["correct_answer"].strip()
+        correct_answer = question_data["correct_answer"]
         is_multiple = question_data["type"] == "multiple"
-        # Get user's answer in a comparable format
+
         if is_multiple:
             selected = [option for var, option in self.option_vars if var.get()]
-            user_answer = " ".join(selected).strip()
-            # For lenient matching, sort both
-            is_correct = (
-                set(user_answer.split()) == set(correct_answer.split())
-                and len(user_answer) > 0
-            )
+            if not selected:
+                self.feedback_label.config(text="Please select at least one answer.", fg="orange")
+                return
+            # Match by checking which options appear in the correct_answer string
+            correct_options = [o for o in question_data["options"] if o in correct_answer]
+            is_correct = sorted(selected) == sorted(correct_options)
+            user_answer_display = ", ".join(selected)
+            correct_answer_display = ", ".join(correct_options)
         else:
             user_answer = self.option_vars[0].get().strip()
-            is_correct = user_answer == correct_answer
+            if not user_answer:
+                self.feedback_label.config(text="Please select an answer.", fg="orange")
+                return
+            is_correct = user_answer == correct_answer.strip()
+            user_answer_display = user_answer
+            correct_answer_display = correct_answer.strip()
+
         self.user_answers.append({
             "question": question_data["question"],
-            "your_answer": user_answer,
-            "correct_answer": correct_answer,
+            "your_answer": user_answer_display,
+            "correct_answer": correct_answer_display,
             "explanation": question_data.get("explanation", ""),
             "is_correct": is_correct
         })
         if is_correct:
-            self.feedback_label.config(text=f"Correct!\n\nExplanation:\n{question_data.get('explanation','')}", fg="green")
+            self.feedback_label.config(
+                text=f"Correct!\n\nExplanation:\n{question_data.get('explanation', '')}",
+                fg="green"
+            )
             self.score += 1
         else:
             self.feedback_label.config(
-                text=f"Incorrect.\nYour answer: {user_answer}\nCorrect answer: {correct_answer}\n\nExplanation:\n{question_data.get('explanation','')}",
+                text=f"Incorrect.\nYour answer: {user_answer_display}\nCorrect answer: {correct_answer_display}\n\nExplanation:\n{question_data.get('explanation', '')}",
                 fg="red"
             )
         self.submit_button.config(state=tk.DISABLED)
@@ -127,13 +157,18 @@ class QuizApp:
                 "--------------------------------------------------\n"
             )
             text.insert(tk.END, block)
+        text.see("1.0")
         text.configure(state='disabled')
 
 def main():
     questions = load_questions()
     root = tk.Tk()
     root.title("CATIA V5 Quiz")
-    root.geometry("1200x900")
+    screen_w = root.winfo_screenwidth()
+    screen_h = root.winfo_screenheight()
+    win_w = min(1200, screen_w - 100)
+    win_h = min(900, screen_h - 100)
+    root.geometry(f"{win_w}x{win_h}")
     app = QuizApp(root, questions)
     root.mainloop()
 

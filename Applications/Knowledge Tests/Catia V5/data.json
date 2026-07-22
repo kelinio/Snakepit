@@ -9,7 +9,7 @@
     ],
     "correct_answer": "Computer Aided Three-Dimensional Interactive Application",
     "type": "single",
-    "explanation": "CATIA stands for Computer Aided Three-Dimensional Interactive Application. It is Dassault Systèmes’ premier software for 3D product design, engineering, and simulation."
+    "explanation": "CATIA stands for Computer Aided Three-Dimensional Interactive Application. It is Dassault Syst\u00e8mes\u2019 premier software for 3D product design, engineering, and simulation."
   },
   {
     "question": "Who is the platform P1 intended for?",
@@ -33,7 +33,7 @@
     ],
     "correct_answer": "for advanced design engineering companies that require product, process, and resource modeling.",
     "type": "single",
-    "explanation": "Platform P2 is designed for advanced engineering companies that require not just modeling, but also sophisticated management of product, process, and resources. It’s the default for most professional CATIA users."
+    "explanation": "Platform P2 is designed for advanced engineering companies that require not just modeling, but also sophisticated management of product, process, and resources. It\u2019s the default for most professional CATIA users."
   },
   {
     "question": "Who is the platform P3 intended for?",
@@ -265,18 +265,6 @@
     "explanation": "The FreeStyle workbench provides tools for creating, editing, and analyzing freeform surfaces, including refining and constructing new surface shapes."
   },
   {
-    "question": "What is the specific environment consisting a set of tools that allows the user to perform specific design tasks?",
-    "options": [
-      "Coordinator",
-      "Advisory",
-      "Systematic",
-      "workbenches"
-    ],
-    "correct_answer": "workbenches",
-    "type": "single",
-    "explanation": "A 'workbench' in CATIA is a grouped environment for related tools (e.g., Part Design, Sketcher, Assembly). Each workbench is designed for a specific category of tasks."
-  },
-  {
     "question": "Which parametric and feature based environment you can convert the sketch into sketch based feature?",
     "options": [
       "part design workbench",
@@ -289,18 +277,6 @@
     "explanation": "Part Design workbench lets you turn 2D sketches into solid 3D features (like pads, pockets, and holes) through feature-based modeling."
   },
   {
-    "question": "Which of the component are assembled together to maintain their design intent, In the Top-down, components are created inside the assembly in the assembly Design workbench?",
-    "options": [
-      "Availability",
-      "Confidentiality",
-      "Non-repudiation",
-      "bottom -up"
-    ],
-    "correct_answer": "bottom -up",
-    "type": "single",
-    "explanation": "Bottom-up assembly involves inserting pre-made components; top-down involves designing new components in the assembly context. Both preserve design intent."
-  },
-  {
     "question": "Which type of analysis tool is used to detect clash, clearance, and contact between components and subassemblies?",
     "options": [
       "Space analysis",
@@ -311,18 +287,6 @@
     "correct_answer": "Space analysis",
     "type": "single",
     "explanation": "The Space Analysis toolset (in Assembly Design or DMU) allows you to check for collisions, clearances, and contacts between assembly parts."
-  },
-  {
-    "question": "for documentation in the form of Drawing views in their detailing.",
-    "options": [
-      "mobile code",
-      "Risk Assessment",
-      "Risk Mitigation",
-      "Drafting W"
-    ],
-    "correct_answer": "Drafting W",
-    "type": "single",
-    "explanation": "The Drafting workbench is used to create detailed 2D documentation and drawings from 3D parts and assemblies."
   },
   {
     "question": "Which of the following is used to automatically generate the drawing views of the parts and assemblies?",
@@ -479,54 +443,6 @@
     "correct_answer": "Interactive",
     "type": "single",
     "explanation": "Interactive drafting involves manually creating drawing views, as opposed to automatic projection from 3D geometry."
-  },
-  {
-    "question": "Which of the following is used for the designing the sheet metal components?",
-    "options": [
-      "Generative Sheetmetal Design W",
-      "Incident Response Capability",
-      "character (ascii, varchar, etc.)",
-      "date (timestamp, etc.)"
-    ],
-    "correct_answer": "Generative Sheetmetal Design W",
-    "type": "single",
-    "explanation": "Generative Sheetmetal Design Workbench is specialized for modeling and unfolding sheet metal parts."
-  },
-  {
-    "question": "Which of the following is used to design mechanisms by adding joints between the components / simulate/ analyse?",
-    "options": [
-      "Lightweight transactions",
-      "The information system level",
-      "The organization level",
-      "DMU Kinematic W"
-    ],
-    "correct_answer": "DMU Kinematic W",
-    "type": "single",
-    "explanation": "DMU Kinematic Workbench allows simulation and analysis of mechanical assemblies with moving parts."
-  },
-  {
-    "question": "Which option is used to manipulate and refine an existing Wsurface / create independent surfaces and analyzing the surfaces?",
-    "options": [
-      "Freestyle W",
-      "DAA",
-      "User representative",
-      "Referential Integrity"
-    ],
-    "correct_answer": "Freestyle W",
-    "type": "single",
-    "explanation": "Freestyle Workbench lets you edit and create freeform (Class-A) surfaces, ideal for automotive and industrial design."
-  },
-  {
-    "question": "Which of the following represents the Geometric constraints?",
-    "options": [
-      "Consistency Level and options",
-      "Information System Owner",
-      "Sketcher workbench",
-      "assembly constraints"
-    ],
-    "correct_answer": "assembly constraints",
-    "type": "single",
-    "explanation": "Geometric constraints in CATIA (e.g., coincidence, parallelism) control relative geometry, both in Sketcher and Assembly."
   },
   {
     "question": "Which of the following contains commands that allow you to manipulate (pan, rotate, zoom) your part and contains different viewing options?",
@@ -883,14 +799,14 @@
   {
     "question": "Which geometry tool creates conic curves such as ellipse, parabola, hyperbola etc?",
     "options": [
-      "Ellipses",
-      "Parabolas",
-      "Advisory",
-      "Systematic"
+      "Conic",
+      "Circle",
+      "Spline",
+      "Profile"
     ],
-    "correct_answer": "Ellipses Parabolas",
-    "type": "multiple",
-    "explanation": "Both the Ellipse and Parabola tools let you sketch conic sections in the Sketcher workbench."
+    "correct_answer": "Conic",
+    "type": "single",
+    "explanation": "The Conic tool lets you sketch conic sections like ellipses, parabolas, and hyperbolas in the Sketcher workbench."
   },
   {
     "question": "Which of the following creates geometrical constraints on selected elements?",
@@ -1036,19 +952,7 @@
     ],
     "correct_answer": "Face-Face Fillet",
     "type": "single",
-    "explanation": "Face-Face Fillet creates a blend between two faces, even if edges don’t directly intersect."
-  },
-  {
-    "question": "Which of the following tool replaces a selected edge by a flat section to create a beveled surface?",
-    "options": [
-      "Cells",
-      "Frame",
-      "Assess",
-      "Chamfer"
-    ],
-    "correct_answer": "Chamfer",
-    "type": "single",
-    "explanation": "Chamfer again, as above, creates a flat surface between two faces at a selected edge."
+    "explanation": "Face-Face Fillet creates a blend between two faces, even if edges don\u2019t directly intersect."
   },
   {
     "question": "Which of the following describes that sketch must not contain any internal loops?",
@@ -1147,7 +1051,7 @@
     ],
     "correct_answer": "revolved feature",
     "type": "single",
-    "explanation": "A 'revolved feature' is made by revolving a profile 360° around an axis (e.g., shafts, rings)."
+    "explanation": "A 'revolved feature' is made by revolving a profile 360\u00b0 around an axis (e.g., shafts, rings)."
   },
   {
     "question": "Which of the following removes one or more faces from the solid and applies a constant thickness to the remaining faces?",
@@ -1171,7 +1075,7 @@
     ],
     "correct_answer": "thin feature",
     "type": "single",
-    "explanation": "A thin feature applies a wall thickness to a profile—useful for creating thin-walled shapes."
+    "explanation": "A thin feature applies a wall thickness to a profile\u2014useful for creating thin-walled shapes."
   },
   {
     "question": "Which of the following sketcher tool equates all selected parameters to a value?",
@@ -1188,12 +1092,12 @@
   {
     "question": "Which type of sketcher tool projects the existing 3D elements onto the sketch plane?",
     "options": [
-      "Snitch",
-      "Disposal",
-      "Pre-certification",
-      "3D Geometry"
+      "Project 3D Elements",
+      "Intersect 3D Elements",
+      "Project 3D Silhouette Edges",
+      "Constraint Defined in Dialog Box"
     ],
-    "correct_answer": "3D Geometry",
+    "correct_answer": "Project 3D Elements",
     "type": "single",
     "explanation": "The 'Project 3D Elements' tool projects 3D edges, points, or curves onto your sketch for reference."
   },
@@ -1219,7 +1123,7 @@
     ],
     "correct_answer": "investigate what is wrong with the sketch. Although the sketch appears to be completely green the status of the sketch is actually underconstrained",
     "type": "multiple",
-    "explanation": "The Sketch Solving Status tool helps you troubleshoot why your sketch isn't fully constrained—even if it appears fully green, it can reveal hidden under-constrained conditions."
+    "explanation": "The Sketch Solving Status tool helps you troubleshoot why your sketch isn't fully constrained\u2014even if it appears fully green, it can reveal hidden under-constrained conditions."
   },
   {
     "question": "Which of the following describes the steps to review the second open profile?",
@@ -1244,30 +1148,6 @@
     "correct_answer": "Trim tool",
     "type": "single",
     "explanation": "The Trim tool cuts or extends geometry in a sketch; add tangency constraints for smooth transitions between lines and arcs."
-  },
-  {
-    "question": "Which of the following is used to create a shaft feature?",
-    "options": [
-      "Frame",
-      "Assess",
-      "Respond",
-      "Dimension"
-    ],
-    "correct_answer": "Dimension",
-    "type": "single",
-    "explanation": "A shaft is created by revolving a profile around an axis; dimension constraints define the shape and position."
-  },
-  {
-    "question": "Open up the part Ex4H.CATPart using which of the following option?",
-    "options": [
-      "Open tool",
-      "Assess",
-      "Respond",
-      "network"
-    ],
-    "correct_answer": "Open tool",
-    "type": "single",
-    "explanation": "Use the Open tool in CATIA to open existing CATPart files for editing or analysis."
   },
   {
     "question": "Which of the following represents the steps to create [50mm] diameter holes?",
@@ -1304,18 +1184,6 @@
     "correct_answer": "creating one profile, use the Rotate tool to create the remaining three profiles.",
     "type": "single",
     "explanation": "Draw a single pocket profile, then use the Rotate tool to duplicate it for features like bolt hole circles."
-  },
-  {
-    "question": "to a thickness of 2 mm, except at the bottom where the thickness should be different.",
-    "options": [
-      "Cardholder",
-      "Vendor Supplied Defaults",
-      "Authorization Process",
-      "Shell the model"
-    ],
-    "correct_answer": "Shell the model",
-    "type": "single",
-    "explanation": "Use the Shell operation to hollow out a solid, leaving the specified wall thickness (except at specified faces like the bottom)."
   },
   {
     "question": "Which of the following provides the most efficient method of creating this geometry?",
@@ -1387,7 +1255,7 @@
     ],
     "correct_answer": "A thread",
     "type": "single",
-    "explanation": "Threads are helical grooves—external threads (e.g., bolts) or internal (taps in holes)."
+    "explanation": "Threads are helical grooves\u2014external threads (e.g., bolts) or internal (taps in holes)."
   },
   {
     "question": "Which of the following is beyond dimension changes, is often required as design intent changes or modeling strategies evolve?",
@@ -1411,7 +1279,7 @@
     ],
     "correct_answer": "Variable Angle Draft",
     "type": "single",
-    "explanation": "Variable Angle Draft lets you set multiple draft angles along an edge—useful for complex parts."
+    "explanation": "Variable Angle Draft lets you set multiple draft angles along an edge\u2014useful for complex parts."
   },
   {
     "question": "Which of the following represents the steps to create a stiffener?",
@@ -1431,11 +1299,11 @@
       "Actively used columns in selective filters",
       "This test attempts to exploit vulnerabilities",
       "Create the sketch on the YZ plane.",
-      "Create a 360° shaft feature."
+      "Create a 360\u00b0 shaft feature."
     ],
-    "correct_answer": "Create the sketch on the YZ plane. Create a 360° shaft feature.",
+    "correct_answer": "Create the sketch on the YZ plane. Create a 360\u00b0 shaft feature.",
     "type": "multiple",
-    "explanation": "To make a shaft (revolved solid): sketch on the YZ plane, then use the Shaft tool for a 360° revolution."
+    "explanation": "To make a shaft (revolved solid): sketch on the YZ plane, then use the Shaft tool for a 360\u00b0 revolution."
   },
   {
     "question": "Which of the following represents the steps to create a basic draft?",
@@ -1447,7 +1315,7 @@
     ],
     "correct_answer": "Select the walls of the cylinder as the faces to draft and the top surface as the neutral and pulling direction. Specify a [6deg] draft angle.",
     "type": "multiple",
-    "explanation": "Choose faces to draft, set the neutral surface, and assign a specific draft angle (e.g. 6°)."
+    "explanation": "Choose faces to draft, set the neutral surface, and assign a specific draft angle (e.g. 6\u00b0)."
   },
   {
     "question": "Which of the following represents the steps to create a Reflect draft?",
@@ -1473,19 +1341,7 @@
     ],
     "correct_answer": "Select the edges around the top and bottom profiles and specify a [5mm] radius value.",
     "type": "single",
-    "explanation": "Edge fillets are created by selecting model edges and specifying a radius—commonly used for stress relief and aesthetics."
-  },
-  {
-    "question": "and note the hidden and deactivated features.",
-    "options": [
-      "Review the specification tree",
-      "Enable automatic leak detection",
-      "Start on-demand capture session",
-      "bundling loans together"
-    ],
-    "correct_answer": "Review the specification tree",
-    "type": "single",
-    "explanation": "Review the specification tree to see all features, including those that are hidden or deactivated."
+    "explanation": "Edge fillets are created by selecting model edges and specifying a radius\u2014commonly used for stress relief and aesthetics."
   },
   {
     "question": "Which of the following are the steps for Features Activation?",
@@ -1500,18 +1356,6 @@
     "correct_answer": "Load Ex3E.CATPart. Review the specification tree Hide the default reference planes. Activate the edge fillets. Close the model",
     "type": "multiple",
     "explanation": "Feature activation may involve loading a part, reviewing and hiding/showing features, and making features active for editing."
-  },
-  {
-    "question": "Which of the following is used to Open Ex5e_error. CATPart?",
-    "options": [
-      "The set of requirements that a merchant must adhere to in order to be authorized to accept card card payments",
-      "used to describe an entity that actually approves the transaction when a purchase is made.",
-      "cardholder data and sensitive authentication data",
-      "Open an existing part file using the Open tool and investigate the features in the specification tree."
-    ],
-    "correct_answer": "Open an existing part file using the Open tool and investigate the features in the specification tree.",
-    "type": "single",
-    "explanation": "To analyze or fix a part with errors, open it and inspect features in the specification tree."
   },
   {
     "question": "By which option, you can open an existing part file, update the part and resolve any feature failures?",
@@ -1816,5 +1660,611 @@
     "correct_answer": "Create a formula.",
     "type": "single",
     "explanation": "You can control one parameter (like a hole's diameter) based on another (e.g., outer radius) by creating a formula."
+  },
+  {
+    "question": "Which tool in Generative Shape Design creates a surface by sweeping a profile along a guide curve?",
+    "options": [
+      "Sweep",
+      "Extrude",
+      "Revolve",
+      "Multi-sections Surface"
+    ],
+    "correct_answer": "Sweep",
+    "type": "single",
+    "explanation": "The Sweep tool generates a surface by sweeping a profile curve along one or more guide curves."
+  },
+  {
+    "question": "What does the 'Join' command do in Generative Shape Design?",
+    "options": [
+      "Merges adjacent surfaces or curves into a single element",
+      "Splits a surface",
+      "Thickens a surface",
+      "Extrapolates a boundary"
+    ],
+    "correct_answer": "Merges adjacent surfaces or curves into a single element",
+    "type": "single",
+    "explanation": "Join is used to assemble multiple adjacent curves or surfaces into a single continuous topological element."
+  },
+  {
+    "question": "Which of the following operations can be performed using the 'Healing' tool?",
+    "options": [
+      "Close small gaps between surfaces",
+      "Fix non-manifold edges",
+      "Ensure tangency continuity (G1) across boundaries",
+      "Create a swept surface"
+    ],
+    "correct_answer": "Close small gaps between surfaces Fix non-manifold edges Ensure tangency continuity (G1) across boundaries",
+    "type": "multiple",
+    "explanation": "Healing repairs models by closing small gaps, fixing topological errors, and enforcing continuity constraints."
+  },
+  {
+    "question": "Which tool extracts the boundary curve of a surface?",
+    "options": [
+      "Boundary",
+      "Extract",
+      "Intersection",
+      "Projection"
+    ],
+    "correct_answer": "Boundary",
+    "type": "single",
+    "explanation": "The Boundary tool extracts the outer edge (or internal hole edge) of a surface as a 3D curve."
+  },
+  {
+    "question": "In GSD, what is the purpose of the 'Extrapolate' command?",
+    "options": [
+      "Extends a surface or curve past its original boundary",
+      "Trims a surface",
+      "Measures distance",
+      "Creates a fillet"
+    ],
+    "correct_answer": "Extends a surface or curve past its original boundary",
+    "type": "single",
+    "explanation": "Extrapolate extends elements tangentially or via curvature continuity beyond their original limits."
+  },
+  {
+    "question": "Which command allows you to create a surface passing through multiple profile curves?",
+    "options": [
+      "Multi-sections Surface",
+      "Blend",
+      "Sweep",
+      "Fill"
+    ],
+    "correct_answer": "Multi-sections Surface",
+    "type": "single",
+    "explanation": "Multi-sections Surface creates a lofted surface passing through two or more profile curves."
+  },
+  {
+    "question": "What is the function of the 'Fill' tool?",
+    "options": [
+      "Creates a surface filling a closed boundary",
+      "Fills a solid with material",
+      "Applies color to a surface",
+      "Hollows out a part"
+    ],
+    "correct_answer": "Creates a surface filling a closed boundary",
+    "type": "single",
+    "explanation": "Fill creates a surface within a closed loop of curves or surface edges."
+  },
+  {
+    "question": "Which of the following are valid continuity types in surface design (GSD)?",
+    "options": [
+      "Point (G0)",
+      "Tangency (G1)",
+      "Curvature (G2)",
+      "Acceleration (G3)",
+      "Density (G4)"
+    ],
+    "correct_answer": "Point (G0) Tangency (G1) Curvature (G2) Acceleration (G3)",
+    "type": "multiple",
+    "explanation": "Standard surface continuity levels include G0 (touching), G1 (tangent), G2 (curvature), and G3 (acceleration)."
+  },
+  {
+    "question": "What tool is used to cut a surface using another intersecting surface or curve?",
+    "options": [
+      "Split",
+      "Trim",
+      "Extract",
+      "Join"
+    ],
+    "correct_answer": "Split",
+    "type": "single",
+    "explanation": "Split cuts an element and removes one portion, while keeping the cutting element intact."
+  },
+  {
+    "question": "How does 'Trim' differ from 'Split'?",
+    "options": [
+      "Trim cuts mutually intersecting elements and lets you choose which pieces to keep",
+      "Trim only works on solids",
+      "Trim deletes both surfaces",
+      "Trim merges elements without cutting"
+    ],
+    "correct_answer": "Trim cuts mutually intersecting elements and lets you choose which pieces to keep",
+    "type": "single",
+    "explanation": "Unlike Split, Trim mutually cuts two or more intersecting surfaces/curves and merges the kept portions into one element."
+  },
+  {
+    "question": "In Part Design, what does a Boolean 'Add' operation do?",
+    "options": [
+      "Combines the material of two separate Part Bodies",
+      "Removes material of one body from another",
+      "Finds the intersection of two bodies",
+      "Creates an assembly constraint"
+    ],
+    "correct_answer": "Combines the material of two separate Part Bodies",
+    "type": "single",
+    "explanation": "Boolean Add merges two separate Part Bodies into a single unified solid."
+  },
+  {
+    "question": "Which Boolean operations are available in CATIA V5?",
+    "options": [
+      "Add",
+      "Remove",
+      "Intersect",
+      "Union Trim",
+      "Multiply"
+    ],
+    "correct_answer": "Add Remove Intersect Union Trim",
+    "type": "multiple",
+    "explanation": "Add, Remove, Intersect, and Union Trim are the primary Boolean operations for solids."
+  },
+  {
+    "question": "What is the main benefit of using multiple Part Bodies (Multi-Body modeling)?",
+    "options": [
+      "Allows independent modification of features before combining them",
+      "Reduces file size",
+      "Makes the model render faster",
+      "Prevents the use of sketches"
+    ],
+    "correct_answer": "Allows independent modification of features before combining them",
+    "type": "single",
+    "explanation": "Multi-body modeling lets you design complex features in isolation and combine them cleanly using Boolean operations."
+  },
+  {
+    "question": "What does 'Solid Combine' do?",
+    "options": [
+      "Generates a solid from the intersection of two extruded profiles",
+      "Merges two Part Bodies",
+      "Creates a sweep",
+      "Fills a void"
+    ],
+    "correct_answer": "Generates a solid from the intersection of two extruded profiles",
+    "type": "single",
+    "explanation": "Solid Combine creates a part by intersecting the extrusions of two different profile sketches."
+  },
+  {
+    "question": "What is a 'PowerCopy' in CATIA V5?",
+    "options": [
+      "A template of features that can be instantiated across different models",
+      "A tool to copy and paste text",
+      "A rendering feature",
+      "An animation tool"
+    ],
+    "correct_answer": "A template of features that can be instantiated across different models",
+    "type": "single",
+    "explanation": "PowerCopy allows you to capture a set of features and their relationships to reuse them rapidly in other designs."
+  },
+  {
+    "question": "Which of the following are types of fillets in Part Design?",
+    "options": [
+      "Edge Fillet",
+      "Variable Radius Fillet",
+      "Chordal Fillet",
+      "Face-Face Fillet",
+      "Linear Fillet"
+    ],
+    "correct_answer": "Edge Fillet Variable Radius Fillet Chordal Fillet Face-Face Fillet",
+    "type": "multiple",
+    "explanation": "CATIA supports edge, variable, chordal, face-face, and tritangent fillets."
+  },
+  {
+    "question": "What is the purpose of the 'Thick Surface' feature?",
+    "options": [
+      "Adds solid thickness to a surface to create a solid body",
+      "Changes the display weight of lines",
+      "Creates a shell",
+      "Extracts a surface from a solid"
+    ],
+    "correct_answer": "Adds solid thickness to a surface to create a solid body",
+    "type": "single",
+    "explanation": "Thick Surface takes a zero-thickness surface and applies material offset to create a solid."
+  },
+  {
+    "question": "Which tool replaces a selected face of a solid with a new surface?",
+    "options": [
+      "Replace Face",
+      "Remove Face",
+      "Sew Surface",
+      "Split"
+    ],
+    "correct_answer": "Replace Face",
+    "type": "single",
+    "explanation": "Replace Face extends or trims a solid body to match the contour of a selected surface."
+  },
+  {
+    "question": "What does the 'Sew Surface' command achieve?",
+    "options": [
+      "Attaches a surface to a solid body, adding or removing material",
+      "Stitches two surfaces together in GSD",
+      "Heals a broken solid",
+      "Creates a pattern"
+    ],
+    "correct_answer": "Attaches a surface to a solid body, adding or removing material",
+    "type": "single",
+    "explanation": "Sew Surface merges a surface into a solid, essentially filling or cutting the solid up to that surface boundary."
+  },
+  {
+    "question": "In the specification tree, what does a red lightning bolt symbol on a feature indicate?",
+    "options": [
+      "The feature needs to be updated",
+      "The feature has an error",
+      "The feature is deactivated",
+      "The feature is isolated"
+    ],
+    "correct_answer": "The feature needs to be updated",
+    "type": "single",
+    "explanation": "The red lightning bolt indicates that changes have occurred and the feature (or part) requires a manual Update."
+  },
+  {
+    "question": "Which constraint fixes a component in 3D space within an assembly?",
+    "options": [
+      "Fix Component",
+      "Coincidence Constraint",
+      "Contact Constraint",
+      "Offset Constraint"
+    ],
+    "correct_answer": "Fix Component",
+    "type": "single",
+    "explanation": "The Fix constraint locks all 6 degrees of freedom, anchoring the part in the assembly."
+  },
+  {
+    "question": "What does the 'Snap' tool do in Assembly Design?",
+    "options": [
+      "Quickly aligns geometry without creating a permanent constraint",
+      "Creates a coincidence constraint",
+      "Deletes a part",
+      "Saves a screenshot"
+    ],
+    "correct_answer": "Quickly aligns geometry without creating a permanent constraint",
+    "type": "single",
+    "explanation": "Snap is used for rapid, temporary positioning by aligning elements without storing a constraint."
+  },
+  {
+    "question": "Which tool detects interference between parts in an assembly?",
+    "options": [
+      "Clash Analysis",
+      "Sectioning",
+      "Measure Between",
+      "Update"
+    ],
+    "correct_answer": "Clash Analysis",
+    "type": "single",
+    "explanation": "Clash Analysis (Compute Clash) identifies interferences, contacts, and clearances between components."
+  },
+  {
+    "question": "In DMU Kinematics, what is the base element required to simulate a mechanism?",
+    "options": [
+      "A Fixed Part",
+      "A Revolute Joint",
+      "A Prismatic Joint",
+      "A Formula"
+    ],
+    "correct_answer": "A Fixed Part",
+    "type": "single",
+    "explanation": "Every kinematic mechanism requires at least one Fixed Part to act as the grounded reference."
+  },
+  {
+    "question": "Which joint allows rotation around a single axis?",
+    "options": [
+      "Revolute Joint",
+      "Prismatic Joint",
+      "Cylindrical Joint",
+      "Spherical Joint"
+    ],
+    "correct_answer": "Revolute Joint",
+    "type": "single",
+    "explanation": "A Revolute Joint permits purely rotational movement (1 DOF) around an axis."
+  },
+  {
+    "question": "Which joint allows translation along a single axis?",
+    "options": [
+      "Prismatic Joint",
+      "Revolute Joint",
+      "Spherical Joint",
+      "Planar Joint"
+    ],
+    "correct_answer": "Prismatic Joint",
+    "type": "single",
+    "explanation": "A Prismatic Joint permits pure translational movement (1 DOF) along a line."
+  },
+  {
+    "question": "What is required to make a kinematic mechanism simulatable?",
+    "options": [
+      "The mechanism must have zero Degrees of Freedom (after assigning commands)",
+      "Every part must have a command",
+      "No fixed part is needed",
+      "All joints must be spherical"
+    ],
+    "correct_answer": "The mechanism must have zero Degrees of Freedom (after assigning commands)",
+    "type": "single",
+    "explanation": "A mechanism can be simulated once commands (drivers) have been assigned to joints such that the remaining un-driven DOF is exactly zero."
+  },
+  {
+    "question": "What does a Cylindrical Joint simulate?",
+    "options": [
+      "Translation and rotation along/around the same axis",
+      "Only rotation",
+      "Only translation",
+      "Movement along a curve"
+    ],
+    "correct_answer": "Translation and rotation along/around the same axis",
+    "type": "single",
+    "explanation": "A Cylindrical Joint has 2 DOF: rotation around an axis and translation along that same axis."
+  },
+  {
+    "question": "In Assembly Design, what happens if you 'Replace Component'?",
+    "options": [
+      "Swaps the current part with a new file and attempts to reconnect existing constraints",
+      "Deletes the part permanently",
+      "Creates a mirror image of the part",
+      "Hides the component"
+    ],
+    "correct_answer": "Swaps the current part with a new file and attempts to reconnect existing constraints",
+    "type": "single",
+    "explanation": "Replace Component substitutes a part file, often keeping identical UUID constraints intact."
+  },
+  {
+    "question": "Which tool allows you to cut a visual slice through an assembly to see its interior?",
+    "options": [
+      "Sectioning",
+      "Clash",
+      "Distance Analysis",
+      "Explode"
+    ],
+    "correct_answer": "Sectioning",
+    "type": "single",
+    "explanation": "The Sectioning tool creates dynamic section planes to view the internal arrangement of an assembly."
+  },
+  {
+    "question": "In Drafting, what is a 'Front View'?",
+    "options": [
+      "The primary 2D projection from which other views are folded",
+      "A view looking from the top",
+      "A 3D isometric view",
+      "A magnified detail view"
+    ],
+    "correct_answer": "The primary 2D projection from which other views are folded",
+    "type": "single",
+    "explanation": "The Front View defines the primary orientation, and other orthogonal views (Top, Side) are projected from it."
+  },
+  {
+    "question": "How do you create an orthogonal view (like a Top or Side view) based on a Front View?",
+    "options": [
+      "Projection View",
+      "Detail View",
+      "Section View",
+      "Clipping View"
+    ],
+    "correct_answer": "Projection View",
+    "type": "single",
+    "explanation": "Projection View creates standard top, bottom, left, or right views folded from the active Front View."
+  },
+  {
+    "question": "Which tool is used to show the internal details of a part in Drafting?",
+    "options": [
+      "Section View / Section Cut",
+      "Detail View",
+      "Isometric View",
+      "Clipping View"
+    ],
+    "correct_answer": "Section View / Section Cut",
+    "type": "single",
+    "explanation": "Section Views cut the model along a sketched profile to reveal internal features."
+  },
+  {
+    "question": "What does a 'Detail View' do?",
+    "options": [
+      "Creates an enlarged scale view of a specific local area",
+      "Cuts the part in half",
+      "Shows the bill of materials",
+      "Projects a 3D view"
+    ],
+    "correct_answer": "Creates an enlarged scale view of a specific local area",
+    "type": "single",
+    "explanation": "A Detail View zooms in on a small, intricate area of the drawing, usually inside a circle, at a larger scale."
+  },
+  {
+    "question": "What is the purpose of 'Generative Dimensions' in Drafting?",
+    "options": [
+      "Automatically retrieves constraints from the 3D model into the 2D drawing",
+      "Creates manual 2D dimensions",
+      "Generates a 3D model from a 2D drawing",
+      "Measures the distance between sheets"
+    ],
+    "correct_answer": "Automatically retrieves constraints from the 3D model into the 2D drawing",
+    "type": "single",
+    "explanation": "Generative Dimensions automatically pull the exact dimensional constraints used in the 3D Sketcher/Part Design into the drawing."
+  },
+  {
+    "question": "Which of the following are valid view types in CATIA Drafting?",
+    "options": [
+      "Isometric View",
+      "Auxiliary View",
+      "Broken View",
+      "Breakout View",
+      "Perspective View"
+    ],
+    "correct_answer": "Isometric View Auxiliary View Broken View Breakout View",
+    "type": "multiple",
+    "explanation": "Standard 2D view types include Isometric, Auxiliary, Broken (for long parts), and Breakout (local section)."
+  },
+  {
+    "question": "How do you insert a predefined title block and border in Drafting?",
+    "options": [
+      "Page Setup / Insert Background",
+      "Text Tool",
+      "Dimension Tool",
+      "BOM Generation"
+    ],
+    "correct_answer": "Page Setup / Insert Background",
+    "type": "single",
+    "explanation": "Title blocks and frames are managed in the background layer (Sheet Background) via Page Setup macros or manual insertion."
+  },
+  {
+    "question": "What is the difference between 'Section View' and 'Section Cut'?",
+    "options": [
+      "Section Cut only shows the cut material; Section View shows the cut and background geometry",
+      "There is no difference",
+      "Section View only works on assemblies",
+      "Section Cut creates a 3D model"
+    ],
+    "correct_answer": "Section Cut only shows the cut material; Section View shows the cut and background geometry",
+    "type": "single",
+    "explanation": "A Section Cut only displays the exact slice, whereas a Section View displays the slice plus whatever geometry lies behind the cutting plane."
+  },
+  {
+    "question": "Which tool generates a parts list in an assembly drawing?",
+    "options": [
+      "Insert Bill of Material (BOM)",
+      "Balloon Generation",
+      "Text generation",
+      "Table creation"
+    ],
+    "correct_answer": "Insert Bill of Material (BOM)",
+    "type": "single",
+    "explanation": "The BOM tool extracts assembly product structures and properties into a 2D table."
+  },
+  {
+    "question": "How are components identified in a drawing assembly view to match the BOM?",
+    "options": [
+      "Generate Balloons",
+      "Generate Dimensions",
+      "Text callouts",
+      "Sectioning"
+    ],
+    "correct_answer": "Generate Balloons",
+    "type": "single",
+    "explanation": "Balloons create numbered callouts pointing to components, corresponding directly to the item numbers in the Bill of Material."
+  },
+  {
+    "question": "Which workbench is used for finite element analysis (FEA) in CATIA V5?",
+    "options": [
+      "Generative Structural Analysis",
+      "DMU Kinematics",
+      "Ergonomics Design",
+      "Sheetmetal Design"
+    ],
+    "correct_answer": "Generative Structural Analysis",
+    "type": "single",
+    "explanation": "Generative Structural Analysis is CATIA's built-in workbench for FEA, allowing stress and frequency analysis."
+  },
+  {
+    "question": "What is the first step before computing a structural analysis?",
+    "options": [
+      "Assign a material to the part",
+      "Create a 2D drawing",
+      "Generate a BOM",
+      "Perform a clash analysis"
+    ],
+    "correct_answer": "Assign a material to the part",
+    "type": "single",
+    "explanation": "FEA requires material properties (like Young's Modulus and Poisson's ratio), which are applied via the Apply Material tool."
+  },
+  {
+    "question": "Which of the following are types of restraints in FEA?",
+    "options": [
+      "Clamp",
+      "Slider",
+      "Surface Slider",
+      "User-defined Restraint",
+      "Pad"
+    ],
+    "correct_answer": "Clamp Slider Surface Slider User-defined Restraint",
+    "type": "multiple",
+    "explanation": "Restraints define boundary conditions; Clamp fixes all DOFs, while Sliders allow specific translations."
+  },
+  {
+    "question": "What does a 'Clamp' restraint do?",
+    "options": [
+      "Locks all 6 degrees of freedom for the selected geometry",
+      "Applies a force",
+      "Allows sliding along a plane",
+      "Creates a mesh"
+    ],
+    "correct_answer": "Locks all 6 degrees of freedom for the selected geometry",
+    "type": "single",
+    "explanation": "A Clamp constraint completely immobilizes the selected face, edge, or point (0 DOF)."
+  },
+  {
+    "question": "Which of the following are types of loads you can apply in CATIA FEA?",
+    "options": [
+      "Distributed Force",
+      "Pressure",
+      "Moment",
+      "Acceleration",
+      "Fillet"
+    ],
+    "correct_answer": "Distributed Force Pressure Moment Acceleration",
+    "type": "multiple",
+    "explanation": "You can apply various loads including distributed forces, pressures, moments, and gravity/acceleration."
+  },
+  {
+    "question": "What is a 'Mesh' in FEA?",
+    "options": [
+      "A discretization of the solid into smaller elements (tetrahedrons/hexahedrons)",
+      "A type of surface",
+      "A rendering texture",
+      "A kinematic joint"
+    ],
+    "correct_answer": "A discretization of the solid into smaller elements (tetrahedrons/hexahedrons)",
+    "type": "single",
+    "explanation": "Meshing divides the continuous 3D model into a finite number of small geometric elements for numerical calculation."
+  },
+  {
+    "question": "Which element type is the default for meshing 3D solid parts in CATIA?",
+    "options": [
+      "Tetrahedral elements (TET4/TET10)",
+      "Hexahedral elements (Brick)",
+      "1D Beam elements",
+      "2D Shell elements"
+    ],
+    "correct_answer": "Tetrahedral elements (TET4/TET10)",
+    "type": "single",
+    "explanation": "CATIA's OCTREE 3D mesher defaults to tetrahedral elements because they can easily conform to complex solid geometries."
+  },
+  {
+    "question": "What is the purpose of the 'Compute' command in Generative Structural Analysis?",
+    "options": [
+      "Solves the mathematical model to determine stresses, displacements, and strains",
+      "Calculates the mass of the part",
+      "Detects clashes",
+      "Renders the image"
+    ],
+    "correct_answer": "Solves the mathematical model to determine stresses, displacements, and strains",
+    "type": "single",
+    "explanation": "Compute initiates the FEA solver to calculate the response of the part under the applied loads and constraints."
+  },
+  {
+    "question": "What plot visually displays the stress distribution across the part after computation?",
+    "options": [
+      "Von Mises Stress",
+      "Principal Stress",
+      "Displacement",
+      "Precision"
+    ],
+    "correct_answer": "Von Mises Stress",
+    "type": "single",
+    "explanation": "Von Mises stress is the standard yield criterion plotted to evaluate where a ductile part might fail."
+  },
+  {
+    "question": "How can you verify if your FEA mesh is refined enough?",
+    "options": [
+      "Use the 'Global Error Rate' or check the Estimated Precision plot",
+      "Change the color of the part",
+      "Create a drawing",
+      "Add more material"
+    ],
+    "correct_answer": "Use the 'Global Error Rate' or check the Estimated Precision plot",
+    "type": "single",
+    "explanation": "The Estimated Precision plot shows areas of high error gradient, indicating where the mesh needs to be locally refined for accurate results."
   }
 ]
