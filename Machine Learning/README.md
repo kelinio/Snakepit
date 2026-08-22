@@ -4,12 +4,12 @@ Work from Jeremy Howard's [Practical Deep Learning for Coders](https://course.fa
 
 ## What's here
 
-| Notebook | What it does |
-|---|---|
-| [Is it a Bird?](./fastai/Exercises/Is_it_a_Bird/main.ipynb) | Builds an image classifier that tells birds from forests. Scrapes training images with DuckDuckGo search, fine-tunes a `resnet18` for 3 epochs, then predicts on a held-out photo. |
-| [Deploy a Model — training](./fastai/Exercises/Deploy_Model/model.ipynb) | Trains a cat-vs-dog classifier on the Oxford-IIIT Pets dataset and exports it as `model.pkl`. |
-| [Deploy a Model — Gradio UI](./fastai/Exercises/Deploy_Model/gradio.ipynb) | Wraps the exported model in a [Gradio](https://gradio.app/) interface with three example images, so it can be used from a browser. |
-| [fastbook ch. 1](./fastai/fastbook/01_intro.ipynb) · [ch. 2](./fastai/fastbook/02_production.ipynb) | Exercises worked through alongside the fast.ai book chapters. |
+| Notebook | What it does | Run |
+|---|---|---|
+| [Is it a Bird?](./fastai/Exercises/Is_it_a_Bird/main.ipynb) | Builds an image classifier that tells birds from forests. Scrapes training images with DuckDuckGo search, fine-tunes a `resnet18` for 3 epochs, then predicts on a held-out photo. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kelinio/Snakepit/blob/main/Machine%20Learning/fastai/Exercises/Is_it_a_Bird/main.ipynb) |
+| [Deploy a Model — training](./fastai/Exercises/Deploy_Model/model.ipynb) | Trains a cat-vs-dog classifier on the Oxford-IIIT Pets dataset and exports it as `model.pkl`. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kelinio/Snakepit/blob/main/Machine%20Learning/fastai/Exercises/Deploy_Model/model.ipynb) |
+| [Deploy a Model — Gradio UI](./fastai/Exercises/Deploy_Model/gradio.ipynb) | Wraps the exported model in a [Gradio](https://gradio.app/) interface with three example images, so it can be used from a browser. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kelinio/Snakepit/blob/main/Machine%20Learning/fastai/Exercises/Deploy_Model/gradio.ipynb) |
+| [fastbook ch. 1](./fastai/fastbook/01_intro.ipynb) · [ch. 2](./fastai/fastbook/02_production.ipynb) | Exercises worked through alongside the fast.ai book chapters. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kelinio/Snakepit/blob/main/Machine%20Learning/fastai/fastbook/01_intro.ipynb) |
 
 ## Running these
 

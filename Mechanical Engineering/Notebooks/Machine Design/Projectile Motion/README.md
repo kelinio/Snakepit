@@ -1,5 +1,7 @@
 # Projectile Motion
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kelinio/Snakepit/blob/main/Mechanical%20Engineering/Notebooks/Machine%20Design/Projectile%20Motion/Projectile%20Motion.ipynb)
+
 ## Description
 
 This notebook simulates projectile motion for two launch angles ($\theta_1 = 45^\circ$ and $\theta_2 = 30^\circ$) with an initial velocity of $u_0 = 40 \, \text{m/s}$ under gravity $g = 9.81 \, \text{m/s}^2$. It computes horizontal and vertical position over time and plots the trajectory for each angle.
