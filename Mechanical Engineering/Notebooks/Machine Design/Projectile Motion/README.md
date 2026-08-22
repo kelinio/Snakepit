@@ -1,19 +1,38 @@
-# Projetile Motion
+# Projectile Motion
 
 ## Description
-This Python notebook simulates projectile motion for two launch angles ($$\Large \theta_1 = 45^\circ$$, $$\Large \theta_2 = 30^\circ$$) with initial velocity $$\Large u_0 = 40 \, \text{m/s}$$ under gravity $$\Large g = 9.81 \, \text{m/s}^2$$. It calculates horizontal ($$\Large s_x = u_x t$$) and vertical ($$\Large s_y = u_y t - \frac{1}{2} g t^2$$) positions over time, plotting trajectories for each angle.
 
-## Practical Uses
-- Trajectory Analysis: Predict projectile paths for given launch angles and velocities.
-- Optimization: Determine optimal angles for maximum range or height in engineering designs (e.g., ballistics, sports equipment).
-- Education: Visualize the effect of launch angle on projectile motion for teaching purposes.
+This notebook simulates projectile motion for two launch angles ($\theta_1 = 45^\circ$ and $\theta_2 = 30^\circ$) with an initial velocity of $u_0 = 40 \, \text{m/s}$ under gravity $g = 9.81 \, \text{m/s}^2$. It computes horizontal and vertical position over time and plots the trajectory for each angle.
 
-## Key Equations
-- Horizontal velocity: $$\Large u_x = u_0 \cos(\theta)$$  
-- Vertical velocity: $$\Large u_y = u_0 \sin(\theta)$$  
-- Horizontal position: $$\Large s_x = u_x t$$  
-- Vertical position: $$\Large s_y = u_y t - \frac{1}{2} g t^2$$  
-- Total flight time: $$\Large t_{total} = \frac{2 u_y}{g}$$  
+Drag is neglected — this is the idealised vacuum case.
 
-![Projectile Trajectory](../Images/projectile_main.png)
+![Projectile trajectories for 45° and 30° launch angles](../../../Images/projectile_main.png)
 
+## Practical uses
+
+- **Trajectory analysis** — predict a projectile's path for a given launch angle and velocity.
+- **Optimization** — find the angle that maximises range or height (ballistics, sports equipment).
+- **Education** — visualise how launch angle alone changes the trajectory.
+
+## Key equations
+
+Velocity components:
+
+$$u_x = u_0 \cos(\theta), \qquad u_y = u_0 \sin(\theta)$$
+
+Position over time:
+
+$$s_x = u_x t, \qquad s_y = u_y t - \frac{1}{2} g t^2$$
+
+Total flight time:
+
+$$t_{total} = \frac{2 u_y}{g}$$
+
+## Running it
+
+From the repository root:
+
+```bash
+pip install -r requirements.txt
+jupyter lab "Mechanical Engineering/Notebooks/Machine Design/Projectile Motion/Projectile Motion.ipynb"
+```

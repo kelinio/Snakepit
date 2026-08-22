@@ -1,0 +1,6 @@
+# Notebooks derived from the fast.ai book are course material, not my own work.
+# Mark them as documentation so they don't dominate the repository language stats.
+"Machine Learning/fastai/fastbook/**" linguist-documentation
+
+# Treat notebooks as text so diffs are readable.
+*.ipynb text eol=lf

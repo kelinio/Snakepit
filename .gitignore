@@ -165,3 +165,8 @@ Machine Learning/fastai/**/*.jpeg
 Machine Learning/fastai/**/*.png
 Machine Learning/fastai/**/*.webp
 Machine Learning/fastai/**/*.gif
+
+# fastai build output — models are produced by running the notebooks, not committed
+Machine Learning/fastai/**/*.pkl
+Machine Learning/fastai/**/*.pth
+Machine Learning/fastai/Exercises/Deploy_Model/gradio.py

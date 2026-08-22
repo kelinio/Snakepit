@@ -1,0 +1,21 @@
+# Dependencies for the notebooks in this repository.
+#   pip install -r requirements.txt
+#
+# Developed against Python 3.12.
+#
+# The application in Applications/ needs none of these — it is standard-library
+# Tkinter only. See its own README.
+
+# Notebook environment
+jupyterlab
+ipywidgets
+
+# Mechanical Engineering notebooks
+numpy
+matplotlib
+
+# Machine Learning notebooks (fast.ai course)
+fastai
+fastcore
+ddgs        # DuckDuckGo image search, used to gather training images
+gradio      # browser UI for the deployed classifier
