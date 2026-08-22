@@ -4,11 +4,26 @@ import os
 import json
 import random
 
+def correct_options(question_data):
+    """Return the correct options as a list of exact option strings.
+
+    `correct_answer` is normally a list. Older data files stored it as a single
+    string holding the correct options run together, so fall back to matching
+    options against that string.
+    """
+    correct_answer = question_data["correct_answer"]
+    if isinstance(correct_answer, list):
+        return correct_answer
+    if question_data["type"] == "multiple":
+        return [o for o in question_data["options"] if o in correct_answer]
+    return [correct_answer.strip()]
+
 def load_questions():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(script_dir, "data.json")
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
+        # utf-8-sig so a byte-order mark left by a Windows editor doesn't break parsing
+        with open(file_path, 'r', encoding='utf-8-sig') as file:
             questions = json.load(file)
     except FileNotFoundError:
         messagebox.showerror("Error", f"Question file not found:\n{file_path}")
@@ -23,6 +38,17 @@ def load_questions():
         missing = required_keys - set(q.keys())
         if missing:
             messagebox.showerror("Error", f"Question {i+1} is missing keys: {missing}")
+            raise SystemExit(1)
+        if q["type"] not in ("single", "multiple"):
+            messagebox.showerror("Error", f"Question {i+1} has unknown type: {q['type']!r}")
+            raise SystemExit(1)
+        answers = correct_options(q)
+        if not answers:
+            messagebox.showerror("Error", f"Question {i+1} has no correct answer")
+            raise SystemExit(1)
+        unknown = [a for a in answers if a not in q["options"]]
+        if unknown:
+            messagebox.showerror("Error", f"Question {i+1} marks answers that are not options: {unknown}")
             raise SystemExit(1)
 
     return questions
@@ -85,7 +111,7 @@ class QuizApp:
 
     def check_answer(self):
         question_data = self.questions[self.current_question]
-        correct_answer = question_data["correct_answer"]
+        answers = correct_options(question_data)
         is_multiple = question_data["type"] == "multiple"
 
         if is_multiple:
@@ -93,19 +119,16 @@ class QuizApp:
             if not selected:
                 self.feedback_label.config(text="Please select at least one answer.", fg="orange")
                 return
-            # Match by checking which options appear in the correct_answer string
-            correct_options = [o for o in question_data["options"] if o in correct_answer]
-            is_correct = sorted(selected) == sorted(correct_options)
-            user_answer_display = ", ".join(selected)
-            correct_answer_display = ", ".join(correct_options)
         else:
-            user_answer = self.option_vars[0].get().strip()
+            user_answer = self.option_vars[0].get()
             if not user_answer:
                 self.feedback_label.config(text="Please select an answer.", fg="orange")
                 return
-            is_correct = user_answer == correct_answer.strip()
-            user_answer_display = user_answer
-            correct_answer_display = correct_answer.strip()
+            selected = [user_answer]
+
+        is_correct = set(selected) == set(answers)
+        user_answer_display = ", ".join(selected)
+        correct_answer_display = ", ".join(answers)
 
         self.user_answers.append({
             "question": question_data["question"],
